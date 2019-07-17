@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/
 
-url: "https://tsmin94.github.io/"
+url: "https://tsmin94.github.io"
 base_url: "/"
 # your url: http://USERNAME.github.io
 
@@ -32,7 +32,7 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [blog, category] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 facebook: myfacebook
@@ -73,11 +73,10 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+category: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
