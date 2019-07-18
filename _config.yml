@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/
 
-url: "https://tsmin94.github.io/"
+url: "https://tsmin94.github.io"
 base_url: "/"
 # your url: http://USERNAME.github.io
 
@@ -55,7 +55,7 @@ medium: medium
 email: goji7309@gmail.com
 
 authors:
-    johndoe:
+    TaeSeongMin:
         name: TaeSeong Min
         bio:  A Man who develops the software with coffee
         external-image: false
