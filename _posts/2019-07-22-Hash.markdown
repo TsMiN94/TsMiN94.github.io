@@ -1,0 +1,35 @@
+#### HashCode , HashTable
+<ul>
+● HashCode는 객체의 고유한 정숫값을 말한다. 객체를 비교할 때 우리는 equals()를 사용하여 객체를 비교하는데 이 때 HashCode를
+보고 비교하게 된다. 그렇지만 String 클래스에서는 조금 다르다. HashCode는 객체마다 고유한 정숫값을 가지고 있다고 했지만 실제로
+<br><br>
+<pre>
+String a = "Java";
+String b= new String("Java");
+</pre><br>
+이 객체는 서로다른 객체이므로 고유한 정숫값을 가져야하는게 맞지만 실제로는 해쉬코드 값은 같은 값을 보여주게 된다.
+<pre>
+a.hashCode() = 3254818
+b.hashCode() = 3254818
+</pre>
+이러한 이유는 String 클래스에 제공하는 hashCode()의 구현이 실제로 Object클래스의 hashCode()와는 다르게 재정의 하여 구현이 되어 있기 때문이다.
+또한 다른 객체라 하더라도 hashCode값은 동일할 수 있는데 이렇기에 우리는 equals를 통해 false값이 나오더라도 hashCode의 값이 꼭 다를 필요가
+없다는것을 알아야한다.<br><br>
+</ul>
+
+<ul>
+● HashTable은 JRE1.0, JRE 1.1 버전의 어플리케이션에 대해서 하위 호완 지원을 위해서 사용되어지고 있다.
+
+:question: HashCode로 얻어낸 key로 value를 저장하려고 하는데 같은 key값에 대해서 충돌은 어떻게 해결하나 ? <br>
+<br>
+ 이 러한 문제는 Hash함수로 인해서 많은 메모리를 낭비하지 않기 위해서 필요한 원소의 M개 만큼의 배열만을 사용해서 value를 저장할 때 발생하게된다. <br> 
+<pre>
+ int index = hashCode("key") % M ;
+</pre>
+
+index는 같은 값이 나올 수 있게되고 이러한 문제는 Open Adressing , Seperate Chaining의 기법으로 해결할 수 있다.<br>
+ *Open Addressing 이란 같은 index가 나왔을경우 그 다음 index에 저장하는 방식이다. 이러한 방법은 데이터가 적을 경우 효율적이다. 데이터가 많게 되면 캐쉬 적중률 (hit ratio)가 낮아지기 때문이다. 또한 데이터가 많으면 삭제를 할경우 처리하기가 까다롭기 때문에 데이터가 적은 경우 사용한것이 적절한 방법이다. <br>
+ *Seperate Chaining 이란 인덱스가 겹칠경우 해당 연결리스트를 이용하여 노드를 하나 더 만들어 인덱스가 다음 포인터의 주소값을 가지게 됨으로써 index가 겹치는 문제를 해결할 수 있다. 또한 삭제할 경우 그 처리가 간단하다는 점이 있다. 그러나 이 방법 역시도 하나의 인덱스에 데이터가 밀집 될 경우가 있어 그경우에는 트리로 구현하는 것이 더 좋다고 한다.
+ <br>
+<hr/>
+
