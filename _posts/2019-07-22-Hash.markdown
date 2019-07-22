@@ -1,7 +1,7 @@
 ---
 title: "Hash"
 layout: post
-date: 2016-01-23 22:10
+date: 2019-07-22 22:30
 tag: Hash
 projects: true
 hidden: true # don't count this post in blog pagination
@@ -33,8 +33,9 @@ b.hashCode() = 3254818
 
 <ul>
 ● HashTable은 JRE1.0, JRE 1.1 버전의 어플리케이션에 대해서 하위 호완 지원을 위해서 사용되어지고 있다.
+<br>
+:question: HashCode로 얻어낸 key로 value를 저장하려고 하는데 같은 key값에 대해서 충돌은 어떻게 해결하나 ?
 
-:question: HashCode로 얻어낸 key로 value를 저장하려고 하는데 같은 key값에 대해서 충돌은 어떻게 해결하나 ? <br>
 <br>
  이 러한 문제는 Hash함수로 인해서 많은 메모리를 낭비하지 않기 위해서 필요한 원소의 M개 만큼의 배열만을 사용해서 value를 저장할 때 발생하게된다. <br> 
 <pre>
