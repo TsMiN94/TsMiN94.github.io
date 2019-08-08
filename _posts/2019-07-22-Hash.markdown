@@ -53,6 +53,7 @@ b.hashCode() = 3254818
 <ul>
 ● Linear Probing: 해시함수에서 같은 index가 나왔을경우 그 다음 index에 저장하는 방식이다. 이러한 방법은 데이터가 적을 경우 효율적이다. 데이터가 많게 되면 캐쉬 적중률 (hit ratio)가 낮아지기 때문이다. 또한 데이터가 많으면 삭제를 할경우 처리하기가 까다롭기 때문에 데이터가 적은 경우 사용하는 것이 적절한 방법이다. 이러한 방법은 Linear Clustering 문제가 발생할 수 있는데 key값이 계속해서 겹칠경우 데이터가 응집할 수 있고 이러한 경우 데이터가 많은 경우에 탐색하는데 있어서 굉장히 많은 시간을 소요할수 있다. <br> <br>
 ![Screenshot](https://github.com/TsMiN94/TsMiN94.github.io/tree/master/assets/images/hash-post/linear-probing.PNG)
+ <br>
     
 ● Qudratic Probing: Linear Probing에서 발생하는 Clustering문제를 해결하기 위한 방법으로 해시함수를 이차식으로 만듬으로써 충돌을 최소화하는 것이다.<br>
 <pre>
@@ -66,8 +67,8 @@ b.hashCode() = 3254818
  ● 인덱스가 겹칠경우 그 위치에 있는 데이터의 키값의 포인터로 다음 노드를 생성하고 그 노드의 주소값을 가지고 있게 함으로써 충충돌 문제를 해결할 수    있다. 또한 삭제할 경우 그 처리가 간단하다는 점이 있다. 그러나 이 방법 역시도 하나의 인덱스에 데이터가 밀집 될 경우가 있어 그 경우에는 트리로      구현하는 것이 더 좋다고 한다.
  <br><br>
     
-![Screenshot](https://github.com/TsMiN94/TsMiN94.github.io/tree/master/assets/images/hash-post/chaining.PNG)
-    
+![Screenshot](./assets/images/hash-post/chaining.PNG)
+ <br>
     
 </ul>
 
