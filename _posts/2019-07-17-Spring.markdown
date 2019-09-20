@@ -1,11 +1,11 @@
 ---
-title: "Spring Test Posting"
+title: "What is the Spring ?"
 layout: post
 date: 2019-07-18
 tag: jekyll
 image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
-description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+description: "Spring이란 무엇이며 왜 사용해야하는지 어떻게 사용하는지에 대한 포스팅"
 category: blog
 author: TaeSeongMin
 
@@ -13,4 +13,8 @@ author: TaeSeongMin
 
 
 
-Spring Test Posting
+What is the Spring?
+===================
+- Spring 이란 한줄로 정의하기란 쉽지 않다고 생각한다. 그러나 굳이 한줄로 정의 하자면 자바 엔터플이즈 개발을 편하게 해주는 오픈소스 어플리케이션 프레임워크라고 말할수 있겠다. 아직 저자도 스프링의 모든 것을 시도 해보지 못했다. 고작 API를 사용해보는 수준으로만 배웠지만 스스로 공부하면서 배웠던것을 이곳에 정리하려고 한다. <br>
+
+- Spring
