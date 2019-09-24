@@ -13,8 +13,43 @@ author: TaeSeongMin
 
 
 
-What is the Spring?
-===================
-- Spring 이란 한줄로 정의하기란 쉽지 않다고 생각한다. 그러나 굳이 한줄로 정의 하자면 자바 엔터플이즈 개발을 편하게 해주는 오픈소스 어플리케이션 프레임워크라고 말할수 있겠다. 아직 저자도 스프링의 모든 것을 시도 해보지 못했다. 고작 API를 사용해보는 수준으로만 배웠지만 스스로 공부하면서 배웠던것을 이곳에 정리하려고 한다. <br>
+What is Spring Framework?
+===
+- Spring Framework란 한줄로 정의하기란 쉽지 않다고 생각한다. 지금 내가아는 SpringFramework란 ? 과연 나는 얼마나 아는지 서술해보자면 스프링이란 개발자가 벡엔드 개발하는데 있어서 개발하기 용이하도록 정해져있는 구조를 따라서 개발할수 있도록 도와주는 틀이라고 생각한다. spring framework가 없이 개발을 할때는 개발자가 메소드를 콜하고 구조를 만들고 모든것을 개발해야 했다면 spring을 사용하면 inversion of control(제어의 역전) 이라는 개념이 나오는데 이것은 spring이 이미 벡엔드 개발하는데 용이한 구조를 가지고 있어 개발자는 그 구조에 맞춰서 business logic에만 집중할수 있다. spring을 사용하게 되면 개발자는 다양한 장점을 얻을 수 있는데 그중에서도 가장 중요한것은 Depandency injection이라고 생각한다. 개발하는 과정에서 생성자나 setter를 사용하면 객체간의 결합도가 너무 강해지게 되고 이것은 후에 구성이 변경되거나 클래스가 변화할경우 코드를 수정해야하는 번거로움이 생긴다. 그러나 spring framework를 사용하면 이러한 객체간의 결합도를 느슨하게 해주어 코드를 수정해야하는 번거로움을 해결해줄뿐만 아니라 가독성 및 코드의 재사용성이 높아지는 장점이 있다. spring은 객체를 XML안의 bean태그의 정보를 토대로 생성하며 이것을 POJO(plain old java object)라 부른다. 이 작업은 spring container가 수행하며 bean들의 생성과 생명주기를 관리하고 그들의 결합도를 관리한다.
 
-- Spring
+    굳이 한줄로 정의 하자면 자바 엔터프라이즈 개발을 편하게 해주는 오픈소스 어플리케이션 프레임워크라고 말할수 있겠다. 아직 저자도 스프링의 모든 것을 시도 해보지 못했다. 고작 API를 사용해보는 수준으로만 배웠지만 스스로 공부하면서 배웠던것을 이곳에 정리하려고 한다. 
+<br>
+
+Why should we use Spring? 
+===
+Spring은 많은 문제점을 해결해주므로 스프링을 사용해야하는 이유는 분명하다.
+- Duplication Code /Plumbing Code
+
+    Spring이 중복적인 코드를 해결해줌으로써 개발하는데 좀 더 많은 시간을 할애 할수 있다.
+
+- Dependency Injection
+
+    Spring이 객체간의 결합을 느슨하게 해줌으로써 어플리케이션은 쉽게 유닛테스트를 할수 있다.
+
+- Integration with Other Frameworks
+
+    다른 Framework들간의 결합이 되기 때문에 Hibernate 라던가 JUnit등을 사용 할수 있다.
+
+
+
+ 위에서도 말했지만 Spring이 Java Application을 개발하는데 있어서 하부구조를 포괄적으로 제공해줌으로써 개발자가 Application 개발에 집중할 수 있다.
+
+
+What is the Spring Boot? 
+===
+ - Spring을 사용하여 벡엔드 어플리케이션 개발을 할경우 위와 같이 이점이 많은 반면에 이것을 초기에 설정하는데는 많은 설정을 해줘야하는 경우가 많다. 이러한 불편을 해소하고자 Spring Boot가 개발되었다.
+
+Why Spring Boot?
+===
+- Auto Configuration 
+
+- Easy Dependency Management
+
+- Embedded Servlet Container Support
+
+- SpringBoot Actuator
