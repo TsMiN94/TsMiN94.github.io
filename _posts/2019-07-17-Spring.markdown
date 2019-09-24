@@ -1,9 +1,8 @@
 ---
 title: "What is the Spring ?"
 layout: post
-date: 2019-07-18
-tag: jekyll
-image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
+date: 2019-09-24
+tag: Spring
 headerImage: true
 description: "Spring이란 무엇이며 왜 사용해야하는지 어떻게 사용하는지에 대한 포스팅"
 category: blog
